@@ -1,7 +1,5 @@
-# Calculate the 98th percentile of BMI for the sample
-sample_percentile_98_bmi = np.percentile(sample_data['BMI'], 98)
 
-# Calculate the 98th percentile of BMI for the population
+sample_percentile_98_bmi = np.percentile(sample_data['BMI'], 98)
 population_percentile_98_bmi = np.percentile(diabetes_data['BMI'], 98)
 
 # Create a bar chart for comparison
