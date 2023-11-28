@@ -1,15 +1,11 @@
-# Number of bootstrap samples and sample size
+
 num_bootstrap_samples = 500
 sample_size = 150
-
-# Function to calculate mean, standard deviation, and percentile for BloodPressure
 def calculate_statistics(data):
     mean_bp = np.mean(data['BloodPressure'])
     std_bp = np.std(data['BloodPressure'])
     percentile_95_bp = np.percentile(data['BloodPressure'], 95)
     return mean_bp, std_bp, percentile_95_bp
-
-# Initialize arrays to store bootstrap statistics
 bootstrap_means = np.zeros(num_bootstrap_samples)
 bootstrap_stds = np.zeros(num_bootstrap_samples)
 bootstrap_percentiles = np.zeros(num_bootstrap_samples)
