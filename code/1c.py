@@ -33,3 +33,7 @@ plt.ylabel('BloodPressure Values')
 plt.title('Comparison of BloodPressure Statistics: Population vs Bootstrap Samples')
 plt.xticks(rotation=45)
 plt.show()
+
+#The mean and maximum of the population are higher than those of the sample.
+#The population percentile is higher than the sample percentile, as far as I can tell.
+#There is a tiny distinction between bootstrap and population statistics.
